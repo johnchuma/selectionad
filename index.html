@@ -1,56 +1,73 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<style type="text/css">
-		.bana{
-			position:relative;
-			max-width:900px;
-			height: auto;
-			margin: 10px auto;
-			display: block;
-		}
-		.bana img{ width:100%; height:auto; position: absolute; z-index: 99;}
-		/*.bana .batani{position: absolute; top: 20px; right:4%; padding:5px 15px; background:#000; color: #fff; text-align:center; z-index: 999; cursor:pointer; border-radius: 5px; font-family: Arial;}*/
-		.bana .share{
-			display: none;
-			position: absolute; 
-			top: 15px; 
-			right:3%;
-			z-index: 999;
-			max-width:200px;
-			height:auto;
-		}
-		.share a{
-			font-family: Arial;
-			 padding:5px 5px; 
-			 background:#3B5998; 
-			 color: #ffffff; 
-			 text-align:center; 
-			 display: block; 
-			 border-bottom: 1px solid #333; 
-			 text-decoration: none;
-		}
-	</style>
-</head>
-<body>
-  <div class="bana">
-  	<img src="EPL728-90.gif"> 
-  	<!-- <div class="batani">bonyeza kizenji</div> -->
-  	<div class="share">
-  	    <a href="https://twitter.com/Exim_BankTZ/status/1033017090565963776">Twitter</a>
-  		<a href="https://www.facebook.com/EximBankTz/videos/1989288034464022/">Facebook</a>
-  		<a href="https://www.instagram.com/p/Bm3euSFnO4q/?taken-by=exim_banktz">Instagram</a>
-  	</div>
-  </div>
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript">
-  	  $(document).ready(function(){
- 			$('.bana').click(function(){
- 				$('.share').fadeToggle('slow');
- 			});
-  	  });
-  </script>
-</body>
+  <head>
+    <title></title>
+    <style type="text/css">
+      .bana {
+        position: relative;
+        max-width: 900px;
+        height: auto;
+        margin: 10px auto;
+        display: block;
+      }
+      .bana img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        z-index: 99;
+      }
+      /*.bana .batani{position: absolute; top: 20px; right:4%; padding:5px 15px; background:#000; color: #fff; text-align:center; z-index: 999; cursor:pointer; border-radius: 5px; font-family: Arial;}*/
+      .bana .share {
+        display: none;
+        position: absolute;
+        top: 15px;
+        right: 3%;
+        z-index: 999;
+        max-width: 200px;
+        height: auto;
+      }
+      .share a {
+        font-family: Arial;
+        padding: 5px 5px;
+        background: #3b5998;
+        color: #ffffff;
+        text-align: center;
+        display: block;
+        border-bottom: 1px solid #333;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bana">
+      <img src="EPL728-90.gif" />
+      <!-- <div class="batani">bonyeza kizenji</div> -->
+      <div class="share">
+        <a
+          target="_blank"
+          href="https://twitter.com/Exim_BankTZ/status/1033017090565963776"
+          >Twitter</a
+        >
+        <a
+          target="_blank"
+          href="https://www.facebook.com/EximBankTz/videos/1989288034464022/"
+          >Facebook</a
+        >
+        <a
+          target="_blank"
+          href="https://www.instagram.com/p/Bm3euSFnO4q/?taken-by=exim_banktz"
+          >Instagram</a
+        >
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".bana").click(function () {
+          $(".share").fadeToggle("slow");
+        });
+      });
+    </script>
+  </body>
 </html>
